@@ -18,7 +18,7 @@ public class enterTimeTrack
 		try {
 			WebDriverWait w = new WebDriverWait(driver,ETO);
 			w.until(ExpectedConditions.titleContains(title));
-			Reporter.log("Home page is Displayed", true);
+			Reporter.log("Home page is Displayed", false);
 		} 
 		catch (Exception e)
 		{
