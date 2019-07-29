@@ -13,12 +13,12 @@ public class enterTimeTrack
 		PageFactory.initElements(driver, this);
 	}
 	
-	public static void isVerified(WebDriver driver, long ETO, String title)
+	public static void isVerified(WebDriver driver, long ITO, String title)
 	{
 		try {
-			WebDriverWait w = new WebDriverWait(driver,ETO);
+			WebDriverWait w = new WebDriverWait(driver,ITO);
 			w.until(ExpectedConditions.titleContains(title));
-			Reporter.log("Home page is Displayed", false);
+			Reporter.log("Home page is Displayed", true);
 		} 
 		catch (Exception e)
 		{
